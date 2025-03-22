@@ -33,6 +33,17 @@ NoobLab Graphics is available via Maven. To add it as a dependency in your Maven
 </dependency>
 ```
 
+Add repository (remember to authenticate with Github):
+```xml
+<repositories>
+  <repository>
+    <id>nooblab-graphics-gh</id>
+    <name>Nooblab Graphics</name>
+    <url>https://maven.pkg.github.com/samuelbsource/nooblab-graphics</url>
+  </repository>
+</repositories>
+```
+
 ### Additional Dependencies
 
 Since NoobLab Graphics uses JavaFX as its default backend, it is imperative that your project includes JavaFX dependencies. Failure to do so will result in the library being unable to render graphics. Alternatively, if another backend is preferred (e.g., Swing or OpenGL), ensure that the appropriate libraries are available in your project’s dependency list.
