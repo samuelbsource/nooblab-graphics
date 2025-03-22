@@ -114,17 +114,12 @@
     </repository>
   </repositories>
 
-  <!-- Deploy to my private repository -->
+  <!-- Deploy to Github Packages repository -->
   <distributionManagement>
     <repository>
-      <id>nexus</id>
-      <name>Releases</name>
-      <url>https://nexus.betaori.net/repository/maven-releases</url>
+      <id>github</id>
+      <name>GitHub Packages</name>
+      <url>https://maven.pkg.github.com/samuelbsource/nooblab-graphics</url>
     </repository>
-    <snapshotRepository>
-      <id>nexus</id>
-      <name>Snapshot</name>
-      <url>https://nexus.betaori.net/repository/maven-snapshots</url>
-    </snapshotRepository>
   </distributionManagement>
 </project>
